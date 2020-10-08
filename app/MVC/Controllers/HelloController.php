@@ -5,10 +5,10 @@ class HelloController extends Controller
 {
     public function index()
     {
-        return '<h1>Hello Controller</h1>';
+        return $this->view("index.php", ['name'=>'Иванов']);
     }
     public function data()
     {
-        return '<h1>This is data</h1>';
+        return $this->view("data.php", ['name'=>'Иванов','group'=>'605-71']);
     }
 }
